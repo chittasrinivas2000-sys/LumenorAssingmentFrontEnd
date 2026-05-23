@@ -16,7 +16,7 @@ const App = () => {
   const { isLoading } = useAppSelector((s) => s.auth);
 
   useEffect(() => {
-    // On mount, try to refresh tokens silently
+   
     const tryRefresh = async () => {
       try {
         const res = await fetch(
