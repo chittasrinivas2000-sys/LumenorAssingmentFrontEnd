@@ -20,7 +20,7 @@ const App = () => {
     const tryRefresh = async () => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL || "http://localhost:5000/api"}/auth/refresh`,
+          `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api/auth/refresh`,
           { method: "POST", credentials: "include" }
         );
         if (res.ok) {
